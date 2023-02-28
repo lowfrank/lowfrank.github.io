@@ -1,0 +1,126 @@
+* {
+  font-family: Sans-serif;
+}
+
+body {
+  background-color: #13293d; 
+  color: white;
+}
+
+.no-bullet-point-ul {
+  list-style-type: none;  /* Remove default bullet style */
+  padding: 0;  /* Remove indentation */
+  margin: 0;   /* Remove indentation */
+}
+
+ul {
+  padding: 0;  /* Remove indentation */
+  margin: 0;   /* Remove indentation */
+}
+
+li {
+  margin: 0.75em;
+}
+
+code,
+.inline-code {
+  font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
+  font-size: 1em;
+}
+
+.navbar {
+  list-style-type: none;  /* Remove default bullet style */
+  padding: 0;  /* Remove indentation */
+  margin: 0;   /* Remove indentation */
+  margin-left: 0.5%;  /* Space between the left margin of the page and the navbar */
+  color: #C8C9DB;
+  background-color: #183755;
+  /* border: 1px solid #555; */
+  height: 96%;
+  width: 24%;
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.navbar-ref,
+.navbar-ref:hover,
+.navbar-ref:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-li {
+  margin: 1em;  /* vertical space between list elements */
+  margin-left: 0.5em;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.contents {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 35%;    /*  24 from the navbar + 11  */
+  margin-right: 11%;   /*  Just 11  */
+  padding-bottom: 50px;
+  line-height: 150%;
+}
+
+.header-ref {
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.header-div {
+  text-align: center;  
+}
+
+.h2-el {
+  font-size: 25px;
+}
+
+.kw {
+  font-family: monospace;
+}
+
+.codeblock {
+  background-color: black;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.navigator-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigator-ref {
+  border: none;
+  background-color: #13293d;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 0px 140px;
+  white-space: nowrap;  /* Disable multiline  */
+  overflow: hidden;  /* Disable multiline  */
+}
+
+.link {
+  color: #2b79a2;
+  text-decoration: none; /* Same of Rust Book website */ 
+}
+
+.section-title {
+  padding-top: 30px;
+}
+
+.divider {
+  border: 0;
+  border-top: 3px solid white;
+}
