@@ -16,8 +16,9 @@
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
-    --catchphrase-size: 3.5rem;
+    --catchphrase-size: 3rem;
     --hero-text-width: 30rem;
+    --padding-top: 3rem;
 }
 /* Variables end */
 
@@ -90,11 +91,12 @@ nav a:visited {
 }
 
 .hero-img-div {
-    padding-top: 5rem;
+    padding-top: var(--padding-top);
 }
 
 .hero-img-div img {
-    height: 30rem;
+    height: 32rem;
+    width: 32rem;
     box-shadow: 0px 5px 8px var(--primary-shadow);
 }
 
@@ -119,8 +121,8 @@ nav a:visited {
 }
 
 .more-about {
+    padding-top: var(--padding-top);
     background-color: var(--bg-color);
-    padding: 1rem 6rem;
 }
   
 .more-about h2 {
@@ -130,15 +132,13 @@ nav a:visited {
   
 .more-about p {
     line-height: var(--line-height);
-    padding: 0.4rem;
-}
-
-.divider {
     width: 75%;
-    border: 1px solid black
+    text-align: justify;
+    padding: 0rem 12rem;
 }
 
 .socials {
+    padding-top: 1.5rem;
     text-align: center;
 }
 
@@ -153,7 +153,7 @@ nav a:visited {
         position: fixed;
         background-color: var(--bg-color);
         flex-direction: row;
-        width: 50%;
+        width: 48%;
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
@@ -162,37 +162,40 @@ nav a:visited {
     nav ul li {
         margin: 8px;
     }
-    
-    nav ul.show {
-        transform: translateX(0);
-    }
 
     .hero {
-        margin-top: -4rem;
-        flex-direction: column;
-        gap: 0;
+        flex-direction: row;
+        /* Gap between left and right */
+        gap: 4rem;
+        padding-left: 8rem;
     }
     
     .hero img {
-        height: 20rem;
-        width: 20rem;
+        height: 21rem;
+        width: 21rem;
+    }
+
+    .catchphrase {
+        font-size: 2.5rem;
     }
     
     .bio {
-        margin-top: -7rem;
+        text-align: left;
         width: 20.5rem;
     }
 
     .more-about {
-        margin-top: 2rem;
-        padding: 1rem 3.5rem;
-      }
+        padding-top: 2rem;
+        text-align: justify;
+    }
     
     .more-about h2 {
         text-align: center;
-      }
+    }
     
     .more-about p {
         text-align: justify;
-      }
+        width: 80%;
+        padding: 0rem 7rem;
+    }
 }
