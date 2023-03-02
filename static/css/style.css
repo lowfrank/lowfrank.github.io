@@ -16,6 +16,8 @@
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
+    --catchphrase-size: 3.5rem;
+    --hero-text-width: 30rem;
 }
 /* Variables end */
 
@@ -61,7 +63,7 @@ nav ul {
 }
 
 nav a {
-    font-size: 18   px;
+    font-size: 1.25em;
     text-decoration: none;
     transition: 0.05s;
 }
@@ -86,3 +88,57 @@ nav a:visited {
     display: none;
 }
 
+.hero {
+    display: flex;
+    
+    /* Horizontal items */
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.hero-img-div {
+    padding-top: 5rem;
+}
+
+.hero-img-div img {
+    height: 30rem;
+    box-shadow: 0px 5px 8px var(--primary-shadow);
+}
+
+.hero-text {
+    /* Vertical items */
+    align-items: normal;
+}
+
+.catchphrase-text {
+    width: var(--hero-text-width);
+}
+
+.catchphrase {
+    font-size: var(--catchphrase-size);
+}
+
+.bio {
+    width: var(--hero-text-width);
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.more-about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+  
+.more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+  
+.more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
