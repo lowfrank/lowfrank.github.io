@@ -78,16 +78,6 @@ nav a:visited {
     color: var(--primary-color);
 }
 
-/* Idk what this is */
-.burger-menu {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-}
-
 .hero {
     display: flex;
     
@@ -143,6 +133,11 @@ nav a:visited {
     padding: 0.4rem;
 }
 
+.divider {
+    width: 75%;
+    border: 1px solid black
+}
+
 .socials {
     text-align: center;
 }
@@ -153,14 +148,12 @@ nav a:visited {
     padding: 10px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
     nav ul {
         position: fixed;
         background-color: var(--bg-color);
-        flex-direction: column;
-        top: 86px;
-        left: 10%;
-        width: 80%;
+        flex-direction: row;
+        width: 50%;
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
@@ -168,10 +161,6 @@ nav a:visited {
 
     nav ul li {
         margin: 8px;
-    }
-
-    .burger-menu {
-        display: block;
     }
     
     nav ul.show {
@@ -185,8 +174,8 @@ nav a:visited {
     }
     
     .hero img {
-        height: 37.5rem;
-        width: 30rem;
+        height: 20rem;
+        width: 20rem;
     }
     
     .bio {
