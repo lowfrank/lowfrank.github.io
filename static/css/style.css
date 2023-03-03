@@ -15,7 +15,7 @@
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
-    --transition: 0.3s;
+    --transition: 0.05s;
     --catchphrase-size: 3rem;
     --hero-text-width: 30rem;
     --padding-top: 3rem;
@@ -66,12 +66,13 @@ nav ul {
 nav a {
     font-size: 1.25em;
     text-decoration: none;
-    transition: 0.05s;
+    transition: var(--transition);
 }
 
 nav a:hover {
+    color: var(--secondary-color) !important;
     text-decoration: none;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 nav a:visited {
@@ -90,11 +91,11 @@ nav a:visited {
     margin: auto;
 }
 
-.hero-img-div {
+.hero-img {
     padding-top: var(--padding-top);
 }
 
-.hero-img-div img {
+.hero-img img {
     height: 32rem;
     width: 32rem;
     box-shadow: 0px 5px 8px var(--primary-shadow);
@@ -105,12 +106,13 @@ nav a:visited {
     align-items: normal;
 }
 
-.catchphrase-text {
+.catchphrase {
     width: var(--hero-text-width);
 }
 
-.catchphrase {
+.catchphrase h1 {
     font-size: var(--catchphrase-size);
+    color: var(--primary-color);
 }
 
 .bio {
@@ -118,6 +120,10 @@ nav a:visited {
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio b {
+    color: var(--primary-color);
 }
 
 .more-about {
@@ -137,6 +143,11 @@ nav a:visited {
     padding: 0rem 12rem;
 }
 
+.more-about a {
+    text-decoration: none;
+    color: black;
+}
+
 .socials {
     padding-top: 1.5rem;
     text-align: center;
@@ -146,56 +157,4 @@ nav a:visited {
     width: 2.5rem;
     height: 2.5rem;
     padding: 10px;
-}
-
-@media screen and (max-width: 1080px) {
-    nav ul {
-        position: fixed;
-        background-color: var(--bg-color);
-        flex-direction: row;
-        width: 48%;
-        text-align: center;
-        transform: translateX(120%);
-        transition: transform 0.5s ease-in;
-    }
-
-    nav ul li {
-        margin: 8px;
-    }
-
-    .hero {
-        flex-direction: row;
-        /* Gap between left and right */
-        gap: 4rem;
-        padding-left: 8rem;
-    }
-    
-    .hero img {
-        height: 21rem;
-        width: 21rem;
-    }
-
-    .catchphrase {
-        font-size: 2.5rem;
-    }
-    
-    .bio {
-        text-align: left;
-        width: 20.5rem;
-    }
-
-    .more-about {
-        padding-top: 2rem;
-        text-align: justify;
-    }
-    
-    .more-about h2 {
-        text-align: center;
-    }
-    
-    .more-about p {
-        text-align: justify;
-        width: 80%;
-        padding: 0rem 7rem;
-    }
 }
