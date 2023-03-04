@@ -57,6 +57,10 @@ nav {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+nav h1 {
+    font-size: 1.7rem;
+}
+
 /* Make elements of the top navbar to be horizontally aligned */
 nav ul {
     display: flex;
@@ -96,8 +100,8 @@ nav a:visited {
 }
 
 .hero-img img {
-    height: 32rem;
-    width: 32rem;
+    height: 29.5rem;
+    width: 29.5rem;
     box-shadow: 0px 5px 8px var(--primary-shadow);
 }
 
@@ -146,6 +150,12 @@ nav a:visited {
 .more-about a {
     text-decoration: none;
     color: black;
+}
+
+.more-about a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .socials {
