@@ -126,6 +126,14 @@ nav a:visited {
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
+.bio p {
+    padding-left: 2.4rem;
+}
+
+.bio h2 {
+    padding-left: 2.4rem;
+}
+
 .bio b {
     color: var(--primary-color);
 }
